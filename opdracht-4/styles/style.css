@@ -1,0 +1,361 @@
+/* Navigation Bar */
+#main-nav {
+  background: #1F232D;
+  height: 140px;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#main-nav-content {
+  width: 960px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#main-nav ul li {
+  list-style: none; }
+
+#main-nav ul li a {
+  text-decoration: none;
+  margin: 0 20px 0 20px;
+  color: #DDDDDD; }
+
+* {
+  font-family: "Aptos"; }
+
+#home, #experience {
+  background: #1F232D; }
+
+#about, #contact {
+  background: #2A2F3C; }
+
+.content, #main-nav-content {
+  border: 2px solid #DDDDDD;
+  border-top: none;
+  border-right: none;
+  border-left: none; }
+
+#main-nav ul {
+  display: flex;
+  align-items: center; }
+
+.sub-title, .title, .text, .list-item {
+  color: white; }
+
+#diego.active, .text.experience.active, .link.experience.active, .sub-title.experience.active {
+  animation: fadeInBottom 2s; }
+
+/* Fonts */
+@font-face {
+  font-family: "Aptos";
+  src: url(fonts/29939506207.ttf); }
+
+/* Default settings I use */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Aptos"; }
+
+html {
+  scroll-behavior: smooth;
+  height: 100%; }
+
+body {
+  min-height: 100vh; }
+
+img {
+  -webkit-user-drag: none;
+  width: 100%; }
+
+/* General settings */
+.content {
+  min-height: 100vh;
+  /* width: 100%; */
+  padding: 0 10% 10% 10%; }
+
+.title {
+  text-align: center;
+  padding: 80px 0 80px 0;
+  font-size: 35px;
+  font-weight: lighter; }
+
+.sub-title {
+  text-align: left;
+  padding-bottom: 12px;
+  font-size: 20px;
+  font-weight: lighter; }
+
+.text {
+  font-size: 13px;
+  font-weight: lighter; }
+
+.list-item {
+  font-weight: lighter; }
+
+/* Home */
+#profile {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center; }
+
+#diego {
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px black; }
+
+#about-button {
+  background: #3F475A;
+  color: white;
+  height: 60px;
+  width: 120px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 100px; }
+
+#about-button:hover {
+  transition: background-color 0.2s;
+  background: #2A2F3C; }
+
+#button-text {
+  text-decoration: none;
+  color: white; }
+
+/* About */
+#about-me {
+  display: flex;
+  justify-content: center;
+  gap: 10%; }
+
+#tcr {
+  object-fit: fill;
+  max-width: 400px; }
+
+#tcr.active {
+  animation: fadeInLeft 2s; }
+
+.text.about.active {
+  animation: fadeInRight 2s; }
+
+.sub-title.about.active {
+  animation: fadeInRight 2s; }
+
+#article-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; }
+
+/* Experience */
+#experience-box {
+  display: flex;
+  justify-content: center; }
+
+.experience-sub-box {
+  width: 33%;
+  height: 75vh; }
+
+.link.experience {
+  font-size: 13px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none; }
+
+#stage {
+  display: flex;
+  align-items: center;
+  flex-flow: column-reverse; }
+
+.sub-title#stageplek {
+  text-align: center; }
+
+#wtc {
+  object-fit: cover;
+  height: 300px; }
+
+#projects {
+  display: flex;
+  align-items: center;
+  flex-flow: column; }
+
+.sub-title#stageplek.experience.active {
+  animation: fadeInTop 2s; }
+
+#wtc.experience.active {
+  animation: fadeInTop 2s; }
+
+/* Contact */
+#contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px; }
+
+.contact-sub-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  gap: 100px; }
+
+.sub-title.contact-title {
+  font-size: 22px; }
+
+.sub-title.contact {
+  animation: fadeInRight 2s; }
+
+.contact-inner-box {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  animation: fadeInLeft 2s; }
+
+#gitlab, #mail, #github, #instagram, #linkedin {
+  cursor: pointer; }
+
+#instagram {
+  width: auto;
+  max-height: 150px; }
+
+#instagram.contact {
+  animation: fadeInRight 2s; }
+
+#gitlab, #github, #linkedin {
+  width: auto;
+  max-height: 200px; }
+
+/* Footer */
+footer {
+  background: #1F232D;
+  height: 140px;
+  /* width: 100%; */
+  gap: 40px;
+  padding: 0 10% 0 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.text.footer {
+  position: relative; }
+
+#footer-content ul {
+  display: flex;
+  align-items: center;
+  flex-flow: wrap; }
+
+#footer-content ul li {
+  list-style: none; }
+
+#footer-content ul li a {
+  text-decoration: none;
+  margin: 0 20px 0 0px;
+  color: #DDDDDD; }
+
+@media only screen and (max-width: 940px) {
+  .content {
+    padding: 0 10% 20% 10%; }
+  /* Navigation Bar */
+  #main-nav-content {
+    width: 80%;
+    font-size: 13px; }
+  #main-nav ul li a {
+    margin: 0 15px 0 15px; }
+  /* About */
+  .text.about {
+    text-align: center; }
+  .sub-title.about {
+    text-align: center; }
+  /* Experience */
+  #experience-box {
+    align-items: center;
+    flex-flow: column;
+    gap: 100px; }
+  .experience-sub-box {
+    height: auto;
+    width: 100%; }
+  /* Contact */
+  #contact-box {
+    display: grid;
+    justify-content: center;
+    gap: 200px; }
+  .contact-sub-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px; }
+  .sub-title.contact-title {
+    font-size: 22px; }
+  .contact-inner-box {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    animation: fadeInLeft 2s; }
+  #gitlab, #mail, #github, #instagram, #linkedin {
+    cursor: pointer; }
+  #instagram {
+    width: auto;
+    max-height: 125px; }
+  #instagram.contact {
+    animation: fadeInRight 2s; }
+  #gitlab, #github, #linkedin {
+    width: auto;
+    max-height: 150px; } }
+
+@media only screen and (max-width: 375px) {
+  /* About */
+  #about-me {
+    gap: 100px;
+    flex-flow: column;
+    align-items: center; }
+  #article-box {
+    gap: 100px; } }
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes zoomIn {
+  0% {
+    scale: 0; }
+  100% {
+    scale: 1; } }

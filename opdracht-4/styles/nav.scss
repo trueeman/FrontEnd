@@ -1,0 +1,30 @@
+/* Navigation Bar */
+
+#main-nav {
+    background: #1F232D;
+    height: 140px;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav-content {
+    width: 960px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav ul li {
+    list-style: none;
+}
+
+#main-nav ul li a{
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+    color: #DDDDDD;
+}
