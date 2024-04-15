@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Diego Ballestero</title>
+</head>
+<body>
+    <main>
+        <header>
+        <nav id="main-nav">
+            <section id="main-nav-content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+        <section class="content" id="home">
+            <h1 class="title">Diego Ballestero</h1>
+            <section id="profile">
+                <img src="img/thumbnail_IMG_2589.jpg" alt="" id="diego">
+
+                <button id="about-button">
+                    <a href="#about" id="button-text">About</a>
+                </button>
+            </section>
+        </section>
+        </header>
+
+        <section class="content" id="about">
+            <h1 class="title">About</h1>
+            <section id="about-me">
+                <img src="img/JanLigthartstraat250.jpg" alt="Schoolfoto" id="tcr">
+
+                <section id="article-box">
+                    <article class="article-sub-box">
+                        <h3 class="sub-title about">Over Mij</h3>
+
+                        <p class="text about">
+                            Ik ben Diego Ballestero, 18 jaar oud en geboren in Nederland. <br>
+                            Ik zit op het Techniek College Rotterdam en ik doe Software Development. <br>
+                        </p>
+                    </article>
+                    <article class="article-sub-box">
+                        <h3 class="sub-title about">Hobby's</h3>
+
+                        <p class="text about">
+                            Daarnaast hou ik erg veel van muziek maken en luisteren. <br>
+                            Hier en daar game ik ook een beetje.
+                        </p>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+        <section class="content" id="experience">
+            <h1 class="title">Experience</h1>
+
+            <section id="experience-box">
+                <section class="experience-sub-box">
+                    <h3 class="sub-title experience">Codeertalen die ik leer:</h3>
+
+                    <ul class="text experience">
+                        <li class="list-item">HTML</li>
+                        <li class="list-item">CSS</li>
+                        <li class="list-item">php</li>
+                    </ul>
+                </section>
+                <section class="experience-sub-box" id="stage">
+                    <section>
+                        <h3 class="sub-title experience" id="stageplek">Mijn vorige stageplek:</h3>
+
+                        <img src="img/wtc.jpg" alt="" id="wtc" class="experience">
+                    </section>
+                </section>
+                <article class="experience-sub-box" id="projects">
+                    <h3 class="sub-title experience">Projecten van mij:</h3>
+
+                    <a href="https://github.com/trueeman/Project-2" target="_blank" class="link experience">
+                        https://github.com/trueeman/Project-2
+                    </a>
+
+                    <br> <br>
+                    
+                    <a href="https://github.com/trueeman/ShoeTemple" target="_blank" class="link experience">
+                        https://github.com/trueeman/ShoeTemple
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <section class="content" id="contact">
+            <h1 class="title">Contact</h1>
+
+            <section id="contact-box">
+                <section class="contact-sub-box">
+                    <h3 class="sub-title contact-title contact">Je kunt contact met mij nemen via:</h3>
+
+                    <h3 class="sub-title contact-title contact" id="mail" onclick="mailLink()">diego-ballestero@hotmail.com</h3>
+
+                    <img src="img/instagram.png" alt="Instagram" id="instagram" class="contact" onclick="instagramLink()">
+                </section>
+
+                <section class="contact-sub-box">
+
+
+
+                    <section class="contact-inner-box">
+                        <h3 class="sub-title contact-title">GitLab</h3>
+                        <img src="img/gitlab.jpg" alt="GitLab" id="gitlab" onclick="gitlabLink()">
+                    </section>
+
+                    <section class="contact-inner-box">
+                        <h3 class="sub-title contact-title">GitHub</h3>
+                        <img src="img/github.png" alt="GitHub" id="github" onclick="githubLink()">
+                    </section>
+
+                    <section class="contact-inner-box">
+                        <h3 class="sub-title contact-title">LinkedIn</h3>
+                        <img src="img/LinkedIn_Logo.svg.png" alt="LinkedIn" id="linkedin" onclick="linkedinLink()">
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        
+        <footer>
+            <p class="text footer">©2024 Diego Ballestero</p>
+            
+            <section id="footer-content">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </section>  
+        </footer>
+    </main>
+</body>
+</html>
